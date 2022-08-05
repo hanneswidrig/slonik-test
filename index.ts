@@ -2,7 +2,7 @@ import { createPool, sql } from 'slonik';
 
 type Book = { id: number; rank: number; name: string };
 
-const db = createPool('postgres://postgres:postgres@localhost:9999/postgres', { captureStackTrace: false });
+const db = await createPool('postgres://postgres:postgres@localhost:5432/postgres', { captureStackTrace: false });
 
 await db.connect(async (connection) => {
     await connection.query(sql`
@@ -18,6 +18,6 @@ await db.connect(async (connection) => {
     INSERT INTO public.books (id, rank, name) VALUES (2, 6, 'Dune');
     INSERT INTO public.books (id, rank, name) VALUES (3, 9, 'Jurassic Park');`);
 
-    await connection.any(sql<Book>`SELECT * FROM books WHERE id = ANY(${sql.array([1, 3, 4], 'int4')})`);
-    await connection.any(sql<Book>`SELECT * FROM books WHERE id IN (${sql.join([1, 3, 4], sql`, `)})`);
+    console.log(await connection.any(sql<Book>`SELECT * FROM books WHERE id = ANY(${sql.array([1, 3, 4], 'int4')})`));
+    console.log(await connection.any(sql<Book>`SELECT * FROM books WHERE id IN (${sql.join([1, 3, 4], sql`, `)})`));
 });
