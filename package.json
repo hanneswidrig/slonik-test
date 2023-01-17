@@ -7,7 +7,8 @@
     "scripts": {
         "start": "ts-node --esm index.ts",
         "watch": "nodemon --watch './**/*.ts' --exec \"ts-node --esm\" index.ts",
-        "dev": "tsc-watch --onSuccess \"npm run watch\""
+        "dev": "tsc-watch --onSuccess \"npm run watch\"",
+        "build": "esbuild index.ts --platform=node --outdir=dist --watch"
     },
     "keywords": [],
     "author": "",
@@ -22,6 +23,7 @@
         "zod": "^3.20.2"
     },
     "devDependencies": {
+        "esbuild": "^0.17.2",
         "nodemon": "^2.0.20",
         "prettier": "^2.8.3",
         "tsc-watch": "^6.0.0"
