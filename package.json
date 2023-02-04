@@ -1,31 +1,31 @@
 {
-    "name": "slonik-test",
-    "version": "1.0.0",
-    "description": "",
-    "type": "module",
-    "exports": "./dist/index.js",
-    "scripts": {
-        "start": "ts-node --esm index.ts",
-        "watch": "nodemon --watch './**/*.ts' --exec \"ts-node --esm\" index.ts",
-        "dev": "tsc-watch --onSuccess \"npm run watch\"",
-        "build": "esbuild index.ts --platform=node --outdir=dist --watch"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@types/node": "^18.11.18",
-        "pg-native": "^3.0.1",
-        "slonik": "^33.0.6",
-        "slonik-interceptor-query-logging": "^1.4.7",
-        "ts-node": "^10.9.1",
-        "typescript": "^4.9.4",
-        "zod": "^3.20.2"
-    },
-    "devDependencies": {
-        "esbuild": "^0.17.2",
-        "nodemon": "^2.0.20",
-        "prettier": "^2.8.3",
-        "tsc-watch": "^6.0.0"
-    }
+	"name": "slonik-test",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"exports": "./dist/index.js",
+	"scripts": {
+		"start": "ts-node --esm index.ts",
+		"watch": "nodemon --watch './**/*.ts' --exec \"ts-node --esm\" index.ts",
+		"dev": "tsc-watch --onSuccess \"npm run watch\"",
+		"build": "esbuild index.ts --platform=node --outdir=dist --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/node": "^18.11.18",
+		"pg-native": "^3.0.1",
+		"slonik": "^33.0.6",
+		"slonik-interceptor-query-logging": "^1.4.7",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.4",
+		"zod": "^3.20.2"
+	},
+	"devDependencies": {
+		"esbuild": "^0.17.2",
+		"nodemon": "^2.0.20",
+		"prettier": "^2.8.3",
+		"tsc-watch": "^6.0.0"
+	}
 }

@@ -1,16 +1,16 @@
-import { z } from 'zod';
-import { createPool, sql } from 'slonik';
+import { z } from "zod";
+import { createPool, sql } from "slonik";
 
 const Book = z.object({
-    id: z.number(),
-    rank: z.number(),
-    name: z.string(),
+	id: z.number(),
+	rank: z.number(),
+	name: z.string(),
 });
 
-const db = await createPool('postgres://postgres:postgres@localhost:5432/postgres', { captureStackTrace: false });
+const db = await createPool("postgres://postgres:postgres@localhost:5432/postgres", { captureStackTrace: false });
 
 await db.connect(async (connection) => {
-    await connection.query(sql.unsafe`
+	await connection.query(sql.unsafe`
     CREATE TABLE IF NOT EXISTS books
     (
         id   integer not null constraint books_pk primary key,
@@ -23,10 +23,10 @@ await db.connect(async (connection) => {
     INSERT INTO public.books (id, rank, name) VALUES (2, 6, 'Dune');
     INSERT INTO public.books (id, rank, name) VALUES (3, 9, 'Jurassic Park');`);
 
-    console.log(
-        await connection.any(sql.type(Book)`SELECT * FROM books WHERE id = ANY(${sql.array([1, 3, 4], 'int4')})`)
-    );
-    console.log(
-        await connection.any(sql.type(Book)`SELECT * FROM books WHERE id IN (${sql.join([1, 3, 4], sql.fragment`, `)})`)
-    );
+	console.log(
+		await connection.any(sql.type(Book)`SELECT * FROM books WHERE id = ANY(${sql.array([1, 3, 4], "int4")})`)
+	);
+	console.log(
+		await connection.any(sql.type(Book)`SELECT * FROM books WHERE id IN (${sql.join([1, 3, 4], sql.fragment`, `)})`)
+	);
 });

@@ -1,13 +1,13 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
-        "outDir": "./dist",
-        "strict": true,
-        "types": ["node"],
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
-    }
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"outDir": "./dist",
+		"strict": true,
+		"types": ["node"],
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	}
 }
