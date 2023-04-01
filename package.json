@@ -8,7 +8,7 @@
 		"start": "ts-node --esm index.ts",
 		"watch": "nodemon --watch './**/*.ts' --exec \"ts-node --esm\" index.ts",
 		"dev": "tsc-watch --onSuccess \"npm run watch\"",
-		"build": "esbuild index.ts --platform=node --format=esm --outfile=index.mjs"
+		"build": "esbuild index.ts --platform=node --format=esm --outdir=dist"
 	},
 	"keywords": [],
 	"author": "",
