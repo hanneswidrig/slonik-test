@@ -23,6 +23,5 @@ const Book = z.object({
 });
 
 console.log(await pool.any(sql.type(Book)`SELECT * FROM books WHERE id = ANY(${sql.array([1, 3, 4], "int4")})`));
-console.log(await pool.any(sql.type(Book)`SELECT * FROM books WHERE id IN (${sql.join([1, 3, 4], sql.fragment`, `)})`));
 
 await pool.end();
