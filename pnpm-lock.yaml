@@ -12,30 +12,30 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       slonik:
-        specifier: ^45.6.0
-        version: 45.6.0(pg-native@3.1.0)(zod@3.23.8)
+        specifier: ^46.0.1
+        version: 46.0.1(pg-native@3.1.0)(zod@3.23.8)
       slonik-interceptor-query-logging:
-        specifier: ^45.6.0
-        version: 45.6.0(slonik@45.6.0(pg-native@3.1.0)(zod@3.23.8))
+        specifier: ^46.0.1
+        version: 46.0.1(slonik@46.0.1(pg-native@3.1.0)(zod@3.23.8))
       zod:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
       '@types/node':
-        specifier: ^20.14.9
-        version: 20.14.9
+        specifier: ^22.1.0
+        version: 22.1.0
       esbuild:
         specifier: ^0.23.0
         version: 0.23.0
       prettier:
-        specifier: ^3.3.2
-        version: 3.3.2
+        specifier: ^3.3.3
+        version: 3.3.3
       tsx:
-        specifier: ^4.16.2
-        version: 4.16.2
+        specifier: ^4.16.5
+        version: 4.16.5
       typescript:
-        specifier: ^5.5.3
-        version: 5.5.3
+        specifier: ^5.5.4
+        version: 5.5.4
 
 packages:
 
@@ -321,44 +321,44 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@slonik/driver@45.6.0':
-    resolution: {integrity: sha512-ufqrppKuoWQ6CR1NqypjHA4PBqkcvYhNH8tqb3QpkoLN6J7BPsaXOrN30iOtHBuWbTgKxrwnRJY9lOTGdtSKoA==}
+  '@slonik/driver@46.0.1':
+    resolution: {integrity: sha512-4V6CCOsdLbuN6vVSo8m2o7/hfKwi/WERmey5WIWhvCEvf8pRimoIUvj2m9RoT45vTFa0mn2jwR40R4mR4H6oEQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3
 
-  '@slonik/errors@45.6.0':
-    resolution: {integrity: sha512-Jy0YJcXGARtSd2Frl80oWhWrCC5cDoaq5bhbaUuMpeVBurvIYlc66rXgUHDKPrqE4sYHzSNbQWEOvaOwGEmTIA==}
+  '@slonik/errors@46.0.1':
+    resolution: {integrity: sha512-LR310Kr1sntzxVDkWU+rgHRXsN/sUUZZBFRqdqprimwUPiGhqIzwVCI4Fu32IUfgztyDSObbNVvfudl7eAxdhA==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3
 
-  '@slonik/pg-driver@45.6.0':
-    resolution: {integrity: sha512-dJ16x+Dm4Zd9al9np805kB0sxJY3xNdFbEp/vTyqEGIPpfOW3lneEqf+6PNeEwJnKwsbfPUyEP8BwCVuGFha7g==}
+  '@slonik/pg-driver@46.0.1':
+    resolution: {integrity: sha512-FLOQpEoiwWWxqcq+Q9hSdoLn8Mo2uRMAt1TbU02gbkK6C+qikWwV4L9CZc6q3H+vi40pFbWba+iitYQXT5hCiw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3
 
-  '@slonik/sql-tag@45.6.0':
-    resolution: {integrity: sha512-g7MrUg4Zy6r4bqnYQlsmaFhaDqJYASXC/9GPFKZpP08GzKL0iZjxfBWNrK2tkQEVZlq/xmqmXeLNR6+U8FjOMg==}
+  '@slonik/sql-tag@46.0.1':
+    resolution: {integrity: sha512-wiL7vWFkd9MbhtjH34VTUEVsSTTAp/Yaexl/NnhlmNCjC1zVkA8DY2HYN3Pt7vy/eXasg3EGEkT5AM6AMZQyHQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3
 
-  '@slonik/types@45.6.0':
-    resolution: {integrity: sha512-xvxa6lj7JD825Jnn8MOwQa2cId2O6v8O6d31Xef3/FXzeJSkhlnVw6A2Ilrh62rEMVXT+KQKEhEfEoSITV5BNQ==}
+  '@slonik/types@46.0.1':
+    resolution: {integrity: sha512-jWGM1OLyCNMiAUkMdjuKrSCx3BT/ntgmD3jD+QoS+tFi9JPNQUe6CALFhwr7sIfw8rUhmBSZmlKbKnSo3VG1oA==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3
 
-  '@slonik/utilities@45.6.0':
-    resolution: {integrity: sha512-vjVLRqHyXX73tLN8jGnNWFv359AUKW9CnDduAElkHC3LKkoPRbtUKfZWSDOWz/dbmjBMCczO3n1KIpDSMcnJOA==}
+  '@slonik/utilities@46.0.1':
+    resolution: {integrity: sha512-i1853oFAt8X1j4VOoHp1/iu4y0IeI3qF/O5JqmhBbowKWXUzn0HONGQHHpPsNnSLR405yV9QdH76y192iN3Ylg==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3
 
-  '@types/node@20.14.9':
-    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
+  '@types/node@22.1.0':
+    resolution: {integrity: sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==}
 
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
@@ -525,8 +525,8 @@ packages:
   postgres-range@1.1.4:
     resolution: {integrity: sha512-i/hbxIE9803Alj/6ytL7UHQxRvZkI9O4Sy+J3HGc4F4oo/2eQAjTSNJ0bfxyse3bH0nuVesCk+3IRLaMtG3H6w==}
 
-  prettier@3.3.2:
-    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -555,14 +555,14 @@ packages:
     resolution: {integrity: sha512-3NnuWfM6vBYoy5gZFvHiYsVbafvI9vZv/+jlIigFn4oP4zjNPK3LhcY0xSCgeb1a5L8jO71Mit9LlNoi2UfDDQ==}
     engines: {node: '>=10'}
 
-  slonik-interceptor-query-logging@45.6.0:
-    resolution: {integrity: sha512-52kA1es5THQFIBYnNJshYUlckO9WxCWbRJNjQM1WC8QdR4L+qwbZNb5HX4YMAscQhp9o+JrymNFjf3MpNlOgGw==}
+  slonik-interceptor-query-logging@46.0.1:
+    resolution: {integrity: sha512-I46PmLLzHn/Tq40y/AlDvs35kTnK2eIyqphJ2wu4Ylc9TmLKWmNX8+XFE/H6ssgl41lWaMVYKmT9i8RFf3PFTA==}
     engines: {node: '>=18'}
     peerDependencies:
       slonik: '>=45.0.0'
 
-  slonik@45.6.0:
-    resolution: {integrity: sha512-q3qX1ff0sqmrKIN/6Ra/+bhNtg5AH44pFJwp2T6+bs2oo3lrF3AnyZfPCjzm+uQAsUsW64RNVcoAaUoWMbxsxA==}
+  slonik@46.0.1:
+    resolution: {integrity: sha512-+r2J/XyU8HOOmFs+DJDeJUiJK2nyOkF6GoUHydFdKt2UIsI5yGWlvNQlTaQ3Wv6kWjXFzVnQXGzEQviTwk0xYQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3
@@ -581,8 +581,8 @@ packages:
   string_decoder@0.10.31:
     resolution: {integrity: sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==}
 
-  tsx@4.16.2:
-    resolution: {integrity: sha512-C1uWweJDgdtX2x600HjaFaucXTilT7tgUZHbOE4+ypskZ1OP8CRCSDkCxG6Vya9EwaFIVagWwpaVAn5wzypaqQ==}
+  tsx@4.16.5:
+    resolution: {integrity: sha512-ArsiAQHEW2iGaqZ8fTA1nX0a+lN5mNTyuGRRO6OW3H/Yno1y9/t1f9YOI1Cfoqz63VAthn++ZYcbDP7jPflc+A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -594,13 +594,13 @@ packages:
     resolution: {integrity: sha512-Ne2YiiGN8bmrmJJEuTWTLJR32nh/JdL1+PSicowtNb0WFpn59GK8/lfD61bVtzguz7b3PBt74nxpv/Pw5po5Rg==}
     engines: {node: '>=8'}
 
-  typescript@5.5.3:
-    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
+  typescript@5.5.4:
+    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+  undici-types@6.13.0:
+    resolution: {integrity: sha512-xtFJHudx8S2DSoujjMd1WeWvn7KKWFRESZTMeL1RptAYERu29D6jphMjjY+vn96jvN3kVPDNxU/E13VTaXj6jg==}
 
   xtend@4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
@@ -752,27 +752,27 @@ snapshots:
   '@esbuild/win32-x64@0.23.0':
     optional: true
 
-  '@slonik/driver@45.6.0(zod@3.23.8)':
+  '@slonik/driver@46.0.1(zod@3.23.8)':
     dependencies:
-      '@slonik/types': 45.6.0(zod@3.23.8)
-      '@slonik/utilities': 45.6.0(zod@3.23.8)
+      '@slonik/types': 46.0.1(zod@3.23.8)
+      '@slonik/utilities': 46.0.1(zod@3.23.8)
       roarr: 7.21.1
       serialize-error: 8.1.0
       strict-event-emitter-types: 2.0.0
       zod: 3.23.8
 
-  '@slonik/errors@45.6.0(zod@3.23.8)':
+  '@slonik/errors@46.0.1(zod@3.23.8)':
     dependencies:
-      '@slonik/types': 45.6.0(zod@3.23.8)
+      '@slonik/types': 46.0.1(zod@3.23.8)
       zod: 3.23.8
 
-  '@slonik/pg-driver@45.6.0(pg-native@3.1.0)(zod@3.23.8)':
+  '@slonik/pg-driver@46.0.1(pg-native@3.1.0)(zod@3.23.8)':
     dependencies:
-      '@slonik/driver': 45.6.0(zod@3.23.8)
-      '@slonik/errors': 45.6.0(zod@3.23.8)
-      '@slonik/sql-tag': 45.6.0(zod@3.23.8)
-      '@slonik/types': 45.6.0(zod@3.23.8)
-      '@slonik/utilities': 45.6.0(zod@3.23.8)
+      '@slonik/driver': 46.0.1(zod@3.23.8)
+      '@slonik/errors': 46.0.1(zod@3.23.8)
+      '@slonik/sql-tag': 46.0.1(zod@3.23.8)
+      '@slonik/types': 46.0.1(zod@3.23.8)
+      '@slonik/utilities': 46.0.1(zod@3.23.8)
       pg: 8.12.0(pg-native@3.1.0)
       pg-query-stream: 4.6.0(pg@8.12.0(pg-native@3.1.0))
       pg-types: 4.0.2
@@ -781,28 +781,28 @@ snapshots:
     transitivePeerDependencies:
       - pg-native
 
-  '@slonik/sql-tag@45.6.0(zod@3.23.8)':
+  '@slonik/sql-tag@46.0.1(zod@3.23.8)':
     dependencies:
-      '@slonik/errors': 45.6.0(zod@3.23.8)
-      '@slonik/types': 45.6.0(zod@3.23.8)
+      '@slonik/errors': 46.0.1(zod@3.23.8)
+      '@slonik/types': 46.0.1(zod@3.23.8)
       roarr: 7.21.1
       safe-stable-stringify: 2.4.3
       serialize-error: 8.1.0
       zod: 3.23.8
 
-  '@slonik/types@45.6.0(zod@3.23.8)':
+  '@slonik/types@46.0.1(zod@3.23.8)':
     dependencies:
       zod: 3.23.8
 
-  '@slonik/utilities@45.6.0(zod@3.23.8)':
+  '@slonik/utilities@46.0.1(zod@3.23.8)':
     dependencies:
-      '@slonik/types': 45.6.0(zod@3.23.8)
+      '@slonik/types': 46.0.1(zod@3.23.8)
       roarr: 7.21.1
       zod: 3.23.8
 
-  '@types/node@20.14.9':
+  '@types/node@22.1.0':
     dependencies:
-      undici-types: 5.26.5
+      undici-types: 6.13.0
 
   bindings@1.5.0:
     dependencies:
@@ -998,7 +998,7 @@ snapshots:
 
   postgres-range@1.1.4: {}
 
-  prettier@3.3.2: {}
+  prettier@3.3.3: {}
 
   pretty-ms@7.0.1:
     dependencies:
@@ -1027,20 +1027,20 @@ snapshots:
     dependencies:
       type-fest: 0.20.2
 
-  slonik-interceptor-query-logging@45.6.0(slonik@45.6.0(pg-native@3.1.0)(zod@3.23.8)):
+  slonik-interceptor-query-logging@46.0.1(slonik@46.0.1(pg-native@3.1.0)(zod@3.23.8)):
     dependencies:
       crack-json: 1.3.0
       pretty-ms: 7.0.1
       serialize-error: 8.1.0
-      slonik: 45.6.0(pg-native@3.1.0)(zod@3.23.8)
+      slonik: 46.0.1(pg-native@3.1.0)(zod@3.23.8)
 
-  slonik@45.6.0(pg-native@3.1.0)(zod@3.23.8):
+  slonik@46.0.1(pg-native@3.1.0)(zod@3.23.8):
     dependencies:
-      '@slonik/driver': 45.6.0(zod@3.23.8)
-      '@slonik/errors': 45.6.0(zod@3.23.8)
-      '@slonik/pg-driver': 45.6.0(pg-native@3.1.0)(zod@3.23.8)
-      '@slonik/sql-tag': 45.6.0(zod@3.23.8)
-      '@slonik/utilities': 45.6.0(zod@3.23.8)
+      '@slonik/driver': 46.0.1(zod@3.23.8)
+      '@slonik/errors': 46.0.1(zod@3.23.8)
+      '@slonik/pg-driver': 46.0.1(pg-native@3.1.0)(zod@3.23.8)
+      '@slonik/sql-tag': 46.0.1(zod@3.23.8)
+      '@slonik/utilities': 46.0.1(zod@3.23.8)
       get-stack-trace: 3.1.1
       iso8601-duration: 1.3.0
       postgres-interval: 4.0.2
@@ -1060,7 +1060,7 @@ snapshots:
 
   string_decoder@0.10.31: {}
 
-  tsx@4.16.2:
+  tsx@4.16.5:
     dependencies:
       esbuild: 0.21.5
       get-tsconfig: 4.7.5
@@ -1071,9 +1071,9 @@ snapshots:
 
   type-fest@0.7.1: {}
 
-  typescript@5.5.3: {}
+  typescript@5.5.4: {}
 
-  undici-types@5.26.5: {}
+  undici-types@6.13.0: {}
 
   xtend@4.0.2: {}
 
