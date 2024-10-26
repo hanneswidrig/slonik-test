@@ -7,21 +7,20 @@
 		"build": "esbuild index.ts --platform=node --format=esm --outdir=dist"
 	},
 	"dependencies": {
-		"pg-native": "^3.1.0",
-		"slonik": "^46.0.1",
-		"slonik-interceptor-query-logging": "^46.0.1",
+		"pg-native": "^3.2.0",
+		"slonik": "^46.1.0",
+		"slonik-interceptor-query-logging": "^46.1.0",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
-		"@types/node": "^22.1.0",
-		"esbuild": "^0.23.0",
+		"@types/node": "^22.8.1",
+		"esbuild": "^0.24.0",
 		"prettier": "^3.3.3",
-		"tsx": "^4.16.5",
-		"typescript": "^5.5.4"
+		"tsx": "^4.19.1",
+		"typescript": "^5.6.3"
 	},
 	"prettier": {
 		"useTabs": true,
 		"printWidth": 120
-	},
-	"packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0"
+	}
 }
